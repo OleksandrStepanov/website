@@ -1,0 +1,62 @@
+body {
+   background: -moz-linear-gradient( gray , black);
+} 
+header{
+    /*background-colour:;*/
+    text-align:center;
+    padding:0px;
+    margin:auto;
+}
+
+h1   {color:white;}
+p    {background-color:green;}
+#conditions{
+    border-radius: 25px;
+    background: #73AD21;
+    border:2px solid;
+    padding: 20px;
+    opacity:0.2;
+    width: 90%;
+    background-position: left;
+    height: 150px;
+} 
+#map{
+    border-radius: 25px;
+    background: orange;
+    border:2px solid;
+    padding:20px;
+    width: 90%;
+    background-position: left;
+    height: 150px;
+}
+#calendar {
+    border-radius: 25px;
+    background: #ffff00;
+    border: 2px solid;
+    padding: 20px;
+
+    width: 90%;
+    height: 150px;
+}
+.next {
+    position: absolute;
+    left: 0px;
+    border-radius: 15px 80px;
+    background: gray;
+    padding: 20px;
+    width: 50px;
+    height: 150px;
+} 
+.next2 {
+    left: 20%;
+    }
+.next3 {
+    left: 40%;
+    }
+.next4 {
+    left: 60%;
+    }
+.next5 {
+    left: 80%;
+    }
+    
