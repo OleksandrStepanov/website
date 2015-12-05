@@ -1,0 +1,65 @@
+body {
+   background: -moz-linear-gradient( gray , black);
+} 
+header{
+    color:white;
+    text-align:center;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 50px;
+    background-color: gray;
+    margin: 0 auto;
+}
+section{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+article{
+    border-radius: 25px;
+    padding: 20px;
+    opacity:0.5;
+    border:2px solid;
+}
+.conditions{
+    max-width: 1000px;
+    min-width: 500px;
+    background: #73AD21;
+    background-position: left;
+    height: 150px;
+} 
+.map{
+    width: 400px;
+    background: orange;
+    float: left;
+    height: 250px;
+}
+.calendar {
+    background: #ffff00;
+    height: 250px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    flex-wrap: wrap;
+}
+p {
+    flex: 1 auto;
+    color: white;
+    background: lightblue;
+    max-width: 200px;
+    outline: 1px solid white;
+    padding: 20px;
+    height: 150px;
+    border-radius: 15px 80px;
+}
+
+footer {
+    max-width: 1000px;
+    min-width: 500px;
+    height: 100px;
+    background-color: grey;
+    margin: 0 auto;
+    }
+    
