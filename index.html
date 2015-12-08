@@ -1,25 +1,34 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset = "utf-8" />
-        <title>Weather forecast</title>
-        <link rel="stylesheet" href="main.css" type="text/css" /> 
-    </head>
-    <body>
-        <header><h1>Weather Forecast</h1></header>
-        <section>
-            <form><fieldset><span>Search the city to find out what is the weather like</span><input type="text" name="City"></fieldset></form>
-            <article class ="conditions">conditions</article>
-            <article class ="map">map</article>
-            <article class = "calendar"></article>                
-            <div>
-                    <p>first</p>
-                    <p>second</p>
-                    <p>third</p>
-                    <p>fourth</p>
-                    <p>fifth</p>       
-            </div>
-        </section>
-        <footer>logo</footer>
-    </body>
+<html lang="en-us">
+  <head>
+    <meta charset = "utf-8">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="main.css" type="text/css"> 
+  </head>
+  <body>
+    <header>
+      <img src=“image1.jpg” alt="nature">
+      <h1>Weather Forecast</h1>
+    </header>
+    <section>
+      <form id="City">
+        <fieldset>
+          <span>Search the city to find out what is the weather like</span>
+          <input id="inputCity" type="text" name="City" placeholder="Type needed location"/>
+          <input type="button" id="btnGetWeather" value="GetWeather"/>
+        </fieldset>
+      </form>
+      <article class ="conditions">conditions</article>
+      <article class ="map">map</article>
+      <article class = "calendar"></article>                
+        <div>
+          <p>first</p>
+          <p>second</p>
+          <p>third</p>
+          <p>fourth</p>
+          <p>fifth</p>       
+        </div>
+    </section>
+    <footer>logo</footer>
+  </body>
 </html> 

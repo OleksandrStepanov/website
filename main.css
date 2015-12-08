@@ -1,14 +1,16 @@
 body {
-   background: -moz-linear-gradient( gray , black);
+   background: white;
 } 
 header{
     color:white;
     text-align:center;
     max-width: 1000px;
     min-width: 500px;
-    height: 50px;
-    background-color: gray;
+    height: 500px;
     margin: 0 auto;
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 section{
     max-width: 1000px;
@@ -34,6 +36,9 @@ article{
     float: left;
     height: 250px;
 }
+article:hover:not(.active) {
+background-color: #ff7654;
+}
 .calendar {
     background: #ffff00;
     height: 250px;
@@ -54,7 +59,12 @@ p {
     height: 150px;
     border-radius: 15px 80px;
 }
-
+p:hover:not(.active) {
+background-color: #ff7654;
+}
+.active {
+background-color: #66ff00;
+}
 footer {
     max-width: 1000px;
     min-width: 500px;
