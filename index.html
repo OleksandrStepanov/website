@@ -7,18 +7,25 @@
   </head>
   <body>
     <header>
-      <img src=“image1.jpg” alt="nature">
       <h1>Weather Forecast</h1>
     </header>
     <section>
       <form id="City">
         <fieldset>
           <span>Search the city to find out what is the weather like</span>
-          <input id="inputCity" type="text" name="City" placeholder="Type needed location"/>
+          <input id="inputCity" type="text" name="cityName" placeholder="Type needed location"/>
           <input type="button" id="btnGetWeather" value="GetWeather"/>
+          <div>City: <span id="location" ></span></div>
         </fieldset>
       </form>
-      <article class ="conditions">conditions</article>
+      <article class ="conditions">
+        <table id="weatherTable">
+         <tr>
+          <th>Day</th><th>Temperature</th><th>Conditions</th>
+         </tr>
+        </table>
+      </article>
+      <div id="error"></div>
       <article class ="map">map</article>
       <article class = "calendar"></article>                
         <div>
@@ -30,5 +37,10 @@
         </div>
     </section>
     <footer>logo</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/weatherByCity.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html> 

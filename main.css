@@ -8,7 +8,7 @@ header{
     min-width: 500px;
     height: 500px;
     margin: 0 auto;
-    background-image: url("image1.jpg");
+    background-image: url("images/image1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -16,6 +16,13 @@ section{
     max-width: 1000px;
     min-width: 500px;
     margin: 0 auto;
+}
+#weatherTable{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;
+    border-color:red;
+    border: 1px;
 }
 article{
     border-radius: 25px;
@@ -28,7 +35,7 @@ article{
     min-width: 500px;
     background: #73AD21;
     background-position: left;
-    height: 150px;
+    height: 250px;
 } 
 .map{
     width: 400px;
