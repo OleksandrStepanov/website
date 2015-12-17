@@ -10,19 +10,28 @@
       <h1>Weather Forecast</h1>
     </header>
     <section>
-      <form id="City">
+      <form id="formCity">
         <fieldset>
-          <span>Search the city to find out what is the weather like</span>
-          <input id="inputCity" type="text" name="cityName" placeholder="Type needed location"/>
-          <input type="button" id="btnGetWeather" value="GetWeather"/>
-          <div>City: <span id="location" ></span></div>
-        </fieldset>
+            <label for="cityName">Enter city name:</label>
+            <input id="inputCityName" type="text" name="cityName"/>
+            <input type="button" id="btnGetWeather" value="Get Weather"/>
+        </fieldset>      
       </form>
+      <div>Місто: <span id="location" ></span></div>
       <article class ="conditions">
         <table id="weatherTable">
-         <tr>
-          <th>Day</th><th>Temperature</th><th>Conditions</th>
-         </tr>
+            <tr>
+                <th>Today</th><th>Tomorrow</th><th>AfterTomorrow</th>
+            </tr>
+            <tr>
+                <td id="tempToday"></td><td id="tempTomorrow"></td><td id="tempAfterTomorrow"></td>
+            </tr>
+            <tr>
+                <td id="pressureToday"></td><td id="pressureTomorrow"></td><td id="pressureAfterTomorrow"></td>
+            </tr>
+            <tr>
+                <td id="iconToday"></td><td id="iconTomorrow"></td><td id="iconAfterTomorrow"></td>
+            </tr>
         </table>
       </article>
       <div id="error"></div>
@@ -39,8 +48,6 @@
     <footer>logo</footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-    <script src="scripts/location.js"></script>
-    <script src="scripts/weatherByCity.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html> 
