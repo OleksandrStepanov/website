@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#btnGetWeather').click(function () {
         $.getJSON(
         'http://api.openweathermap.org/data/2.5/forecast/daily?q=' 
-        + "#inputCityName" + '&APPID=c795fd41bd4be40c42b0bc86ac7aa33c&cnt=16&units=metric' + '&lang=' + lang + '&callback=?',
+        + $('#inputCityName',val()) + '&APPID=c795fd41bd4be40c42b0bc86ac7aa33c&cnt=16&units=metric' + '&lang=ua' +  '&callback=?',
         function(data) {
             $('#tempToday').html(data.list[0].temp.day);
             $('#tempTomorrow').html(data.list[1].temp.day);
