@@ -10,32 +10,63 @@
       <h1>Weather Forecast</h1>
     </header>
     <section>
-      <form id="formCity">
-        <fieldset>
-            <label for="cityName">Enter city name:</label>
-            <input id="inputCityName" type="text" name="cityName"/>
-            <input type="button" id="btnGetWeather" value="Get Weather"/>
-        </fieldset>      
+      <form id="locationForm" method="get">
+          <input type="text" id="locationF" list="cities" name="locationC" placeholder="Enter location" autofocus>
+          <input type="submit" value="Search!" id="go_button">
+          <button onclick="currentPosition()" id="locBut">By location</button>
       </form>
       <div>Місто: <span id="location" ></span></div>
-      <article class ="conditions">
-        <table id="weatherTable">
-            <tr>
-                <th>Today</th><th>Tomorrow</th><th>AfterTomorrow</th>
-            </tr>
-            <tr>
-                <td id="tempToday"></td><td id="tempTomorrow"></td><td id="tempAfterTomorrow"></td>
-            </tr>
-            <tr>
-                <td id="pressureToday"></td><td id="pressureTomorrow"></td><td id="pressureAfterTomorrow"></td>
-            </tr>
-            <tr>
-                <td id="iconToday"></td><td id="iconTomorrow"></td><td id="iconAfterTomorrow"></td>
-            </tr>
-        </table>
+      <article id="content">
+         <div id="locTitle"><span id="cityTitle"></span></div>
+
+         <div id="today">
+             <div id="dateStatus"> Today, <span id="todayDate"></span></div>
+             <div id="status">
+                 <div id="todayPic"></div>
+                 <div id="todayTemp"></div>
+                 <div id="otherDetails">
+                     <table>
+                         <tr>
+                             <th>Conditions:</th>
+                             <td id="todayCond"></td>
+                         </tr>
+                         <tr>
+                             <th>Min.temp.:</th>
+                             <td id="todayMin"></td>
+                         </tr>
+                         <tr>
+                             <th>Max.temp.:</th>
+                             <td id="todayMax"></td>
+                         </tr>
+                         <tr>
+                             <th>Precipitation:</th>
+                             <td id="todayPrecip"></td>
+                         </tr>
+                         <tr>
+                             <th>Humidity:</th>
+                             <td id="todayHumidity"></td>
+                         </tr>
+                         <tr>
+                             <th>Pressure:</th>
+                             <td id="todayPressure"></td>
+                         </tr>
+                         <tr>
+                             <th>Wind:</th>
+                             <td id="todayWind"></td>
+                         </tr>
+                     </table>
+                 </div>
+             </div>
+          </div>
       </article>
       <div id="error"></div>
-      <article class ="map">map</article>
+      <article id="content">
+        <div id="locTitle"><p><span id="cityTitle"></span></p></div>
+        <div id="longTable">
+            <table id="sevenDays"  ></table>
+        </div>
+
+      </article>
       <article class = "calendar"></article>                
         <div>
           <p>first</p>
@@ -48,6 +79,9 @@
     <footer>logo</footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script> 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/openweatherAPI.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/7days.js"></script>
+    <script src="scripts/searchByCity.js"></script>
   </body>
 </html> 
