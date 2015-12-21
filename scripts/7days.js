@@ -1,6 +1,6 @@
 /*Function that makes JSON request*/
 function defPosLong(pos) {
-    var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast/daily?'+pos+'&APPID=1cae48a1f1f9d634a387eacf304f35c8&units=metric&cnt=8';
+    var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast/daily?'+pos+'&APPID=c795fd41bd4be40c42b0bc86ac7aa33c&units=metric&cnt=8';
     $.getJSON(weatherAPI, function (response) {
         localStorage.defaultWeather = JSON.stringify({
             timestamp: (new Date()).getTime(),	// getTime() returns milliseconds
@@ -50,7 +50,7 @@ function rollDown(dateD,day, icon, temp ,precip,hmd,prs,wind,speed,alt){
         '<td class="sevenD">' + dateD + '</td>' + '<td class="sevenD">' + day + '</td>'+ '<td class="sevenOth">' + '<img width="73px" height="54px" src="../img/'+ icon +'.png" alt='+alt+'/>'+'<td class="sevenOth">' + temp + '</td>' +
         '<td class="sevenOth">' + prc + '</td>'+'<td class="sevenOth">' + hmd +' &#37;'+ '</td>'+'<td class="sevenOth">' + prs + ' hpa'+'</td>'+'<td class="sevenOth">' + wind + ', '+speed+' m/s'+'</td>'
         + '</tr>';
-    sevenDays.insertRow(-1).innerHTML = markup; // Äîäàºìî ðÿäîê äî òàáëèö³
+    sevenDays.insertRow(-1).innerHTML = markup; // Add rows
 }
 
 

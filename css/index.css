@@ -1,0 +1,96 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+header{
+    color:white;
+    text-align:right;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    font:sans-serif;
+    font-size:30px;
+}
+section{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;
+    color:white;
+}
+#cityTitle{
+    font-size:40px;
+    color:white;
+}
+#todayPic img{
+    width:200px;
+    height:150px;
+    color:white;
+}
+#todayTemp{
+    font-size:60px;
+    color:white;
+}
+#locationForm{
+    background-color:gray;
+    width:100%;
+    margin: 0 auto;
+}
+#locationF {
+    width: 250px;
+    height: 40px;
+    margin-left: 450px;
+    margin-right: 50;
+    outline: none;
+    border: none;
+    float: left;
+    margin-top:-12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font: 20px sans-serif;
+    background-color: rgba(0,0,0,0);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: white;
+    color: white;
+}
+#dateStatus{
+    font-size:30px;
+    color:white;
+}
+#status{
+    font-size: 25px;
+    display: flex;
+    width:1000px;
+    margin:0;
+    padding:0;
+}
+#otherDetails{
+    color:white;
+}
+article{
+    height:50px;
+}
+p:hover:not(.active) {
+background-color: #ff7654;
+}
+.active {
+background-color: #66ff00;
+}
+
+footer {
+    max-width: 1000px;
+    min-width: 500px;
+    height: 20px;
+    background-color: gray;
+    margin: 0 auto;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    }
+

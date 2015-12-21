@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset = "utf-8">
+    <title>Forecast for 7 days</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/forecastFor7.css"> 
+  </head>
+  <body>
+    <header>
+      <h1>Weather Forecast</h1>
+    </header>
+    <section>
+      <article>
+        <form id="locationForm" method="get">
+          <input type="text" id="locationF" list="cities" name="locationC" placeholder="Enter location" autofocus>
+          <input type="submit" value="Search!" id="go_button">
+          <button onclick="currentPosition()" id="locBut">By location</button>
+          <a href="index.html" title="Home">Home</a>
+        </form>
+        <!--div>Місто: <span id="location" ></span></div-->
+      </article>
+      <!--article id="content1">
+         <div id="locTitle"><span id="cityTitle"></span></div>
+        
+      </article-->
+      <article id="content2">
+        <div id="locTitle"><span id="cityTitle"></span></div>
+        <div id="longTable">
+            <table id="sevenDays"></table>
+        </div>
+      </article>
+    </section>
+    <footer>designed by Oleksandr Stepanov</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script> 
+    <script src="scripts/openweatherAPI.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/7days.js"></script>
+    <script src="scripts/searchByCity.js"></script>
+    
+  </body>
+</html> 

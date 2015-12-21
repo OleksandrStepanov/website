@@ -3,19 +3,21 @@
   <head>
     <meta charset = "utf-8">
     <title>Weather forecast</title>
-    <link rel="stylesheet" href="main.css" type="text/css"> 
+    <link rel="stylesheet" href="css/index.css" type="text/css"> 
   </head>
   <body>
     <header>
       <h1>Weather Forecast</h1>
     </header>
     <section>
-      <form id="locationForm" method="get">
-          <input type="text" id="locationF" list="cities" name="locationC" placeholder="Enter location" autofocus>
+      <article>
+        <form id="locationForm" method="get">
+          <input type="text" id="locationF" list="cities" name="locationC" placeholder="Enter needed location" autofocus>
           <input type="submit" value="Search!" id="go_button">
           <button onclick="currentPosition()" id="locBut">By location</button>
-      </form>
-      <div>Місто: <span id="location" ></span></div>
+          <a href="forecastFor7.html" title="Forecast 7 days">Forecast for 7 days</a>
+        </form>
+      </article>
       <article id="content">
          <div id="locTitle"><span id="cityTitle"></span></div>
 
@@ -23,7 +25,7 @@
              <div id="dateStatus"> Today, <span id="todayDate"></span></div>
              <div id="status">
                  <div id="todayPic"></div>
-                 <div id="todayTemp"></div>
+                 <div id="todayTemp">Temperature</div>
                  <div id="otherDetails">
                      <table>
                          <tr>
@@ -59,29 +61,14 @@
              </div>
           </div>
       </article>
-      <div id="error"></div>
-      <article id="content">
-        <div id="locTitle"><p><span id="cityTitle"></span></p></div>
-        <div id="longTable">
-            <table id="sevenDays"  ></table>
-        </div>
-
-      </article>
-      <article class = "calendar"></article>                
-        <div>
-          <p>first</p>
-          <p>second</p>
-          <p>third</p>
-          <p>fourth</p>
-          <p>fifth</p>       
-        </div>
     </section>
-    <footer>logo</footer>
+    <footer>designed by Oleksandr Stepanov</footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script> 
     <script src="scripts/openweatherAPI.js"></script>
     <script src="scripts/location.js"></script>
-    <script src="scripts/7days.js"></script>
     <script src="scripts/searchByCity.js"></script>
+
+    
   </body>
 </html> 
