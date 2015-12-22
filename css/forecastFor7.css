@@ -33,8 +33,6 @@ caption{
     width:70px;
     height:60px;
     color:black;
-    background-origin: content-box;
-    background-color: black;
 }
 #longTable{
     position: relative;
@@ -59,13 +57,10 @@ article{
     border:0px;
 }
 article:hover:not(.active) {
-background-color: #ff7654;
-}
-p:hover:not(.active) {
-background-color: #ff7654;
+background-color: green;
 }
 .active {
-background-color: #66ff00;
+background-color: green;
 }
 footer {
     max-width: 1000px;

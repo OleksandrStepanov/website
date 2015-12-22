@@ -33,14 +33,15 @@ section{
     color:white;
 }
 #locationForm{
-    background-color:gray;
     width:100%;
-    margin: 0 auto;
+    margin-right:0px;
+    padding-right:0px;
+    
 }
 #locationF {
     width: 250px;
     height: 40px;
-    margin-left: 450px;
+    margin-left: 0px;
     margin-right: 50;
     outline: none;
     border: none;
@@ -76,21 +77,26 @@ article{
     height:50px;
 }
 p:hover:not(.active) {
-background-color: #ff7654;
+background-color: blue;
 }
 .active {
-background-color: #66ff00;
+background-color: green;
+}
+a:link {
+    color: white;
+    background-color: gray;
 }
 
 footer {
-    max-width: 1000px;
-    min-width: 500px;
     height: 20px;
     background-color: gray;
     margin: 0 auto;
     position:absolute;
     bottom:0px;
     width:100%;
+    color:white;
     text-align:center;
-    }
+}
+
+
 
