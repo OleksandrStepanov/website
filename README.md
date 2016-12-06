@@ -1,2 +1,2 @@
 # weather forecast
-http://oleksandrstepanov.github.io/website
+http://oleksandrstepanov.github.io/webweather/
